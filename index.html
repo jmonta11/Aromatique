@@ -1,0 +1,149 @@
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aromatique</title>
+		<link rel="stylesheet" href="style.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<header>
+		<h1 id="home">Aromatique</h1>
+
+	<!-------NAVBAR------------>
+
+		<nav>
+			<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#featured-products">Shop</a></li>
+			<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		</header>
+
+		<main>
+
+		<div class="content">
+			<div class="text">
+				<h1>New Arrivals!</h1>
+				<p>Find your perfect scent from our selection of high-quality fragrances
+					for men and women.</p>
+			</div>
+		
+
+	</div>
+<section id="hero">
+			<h2 class="animated-heading">Welcome to our perfume store</h2>
+			<p>
+			Find your perfect scent from our selection of high-quality fragrances
+			for men and women.
+			</p>
+		</section>
+	<!-------PRODUCTS------------>
+		
+		
+		<section id="featured-products">
+			<h2>Our Featured Products:</h2>
+			<ul>
+			<li id="product1">
+				<img src="images/chanel.jpg" alt="Perfume Bottle" />
+				<h3>N5 Chanel</h3>
+				<p>Price: $50.00</p>
+				<button onclick="addToCart('Product Name 1', 50.0)">Add to Cart</button>
+			</li>
+			<li id="product2">
+				<img src="images/chanel2.jpg"Perfume Bottle" />
+				<h3>Coco Chanel</h3>
+				<p>Price: $75.00</p>
+				<button onclick="addToCart('Product Name 2', 75.0)">Add to Cart</button>
+			</li>
+			<li id="product3">
+				<img src="images/perfume4.jpg"Perfume Bottle" />
+				<h3>Versace Limited Edition</h3>
+				<p>Price: $100.00</p>
+				<button onclick="addToCart('Product Name 3', 100.0)">Add to Cart</button>
+			</li>
+			<li id="product3">
+				<img src="images/perfume5.jpg"Perfume Bottle" />
+				<h3>Seoul</h3>
+				<p>Price: $100.00</p>
+				<button onclick="addToCart('Product Name 3', 100.0)">Add to Cart</button>
+			</li>
+			</ul>
+		</section>
+
+	<!-------CART------------>
+
+		<section id="cart">
+			<h2>Shopping Cart</h2>
+			<div id="cart-items">
+			<p>Your cart is empty.</p>
+			</div>
+			<div id="cart-total">
+			<p>Total: $0.00</p>
+			<button id="clear-cart-btn">Clear Cart</button>
+			</div>
+		</section>
+		
+	<!-------ABOUT------------>
+		
+		<section id="about">
+			<h2>Who We Are</h2>
+			<p>
+			Aromatique is your one-stop-shop for all your fragrance needs. We
+			offer a wide selection of high-quality perfumes and colognes for men
+			and women. Our scents are sourced from the best perfume brands and
+			sold at affordable prices. Shop with us today and find your perfect
+			scent!
+			</p>
+		</section>
+
+	<!-------CONTACT------------>
+		
+		
+		<section id="contact">
+			<div class="contact-info">
+			<div class="contact-container">
+				<h2 id="contact">Contact Us</h2>
+				<form class="contact-form" action="#" method="POST">
+			<label for="fullName">Full Name<span>*</span></label>
+					<input type="text" id="fullName" name="fullName" required>
+					<div id="fullNameError" class="error"></div>
+			<label for="phone">Phone Number</label>
+					<input type="text" id="phone" name="phone">
+					<div id="phoneError" class="error"></div>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required>
+			
+			<input type="radio" id="selectedPhone" name="preferredMethod" required>
+						<label for="selectedPhone">Phone</label>
+
+						<input type="radio" id="selectedEmail" name="preferredMethod" required>
+						<label for="selectedEmail">Email</label>
+					</fieldset>
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+					<input type="submit" value="Send Message">
+				</form>
+			<p>Feel free to reach out to us via phone or email.</p>
+	<p><strong>Email:</strong> Perfum.aromatique@gmail.com</p>
+	<p><strong>Phone:</strong> 818-555-1234</p>
+			</div>
+		</main>
+	
+	<!-------FOOTER------------>
+	<footer>
+	<div class="footer-content">
+		<p>Copyright &copy; 2023 Aromatique
+		| <a href="#">Terms of Service</a> 
+		| <a href="#">Privacy Policy</a></p>
+	</div>
+	</footer>
+	<script src="script.js"></script>
+	</body>
+	</html>
+
